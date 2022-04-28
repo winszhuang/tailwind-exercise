@@ -5,8 +5,8 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <h1 class="text-3xl text-primary font-paytone">
-    Almost before
+  <h1 class="text-3xl text-primary font-mono">
+    I'm space mono font!!
   </h1>
   <h2 class=" text-cyan-1 text-2xl">
     我是cyan-1
