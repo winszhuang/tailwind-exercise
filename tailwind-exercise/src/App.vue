@@ -5,8 +5,8 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <h1 class="text-3xl text-primary font-mono">
-    I'm space mono font!!
+  <h1 class="text-3xl text-primary font-mono xl:text-cyan-1">
+    default primary color。on 1440px cyan color ~
   </h1>
   <h2 class=" text-cyan-1 text-2xl">
     我是cyan-1

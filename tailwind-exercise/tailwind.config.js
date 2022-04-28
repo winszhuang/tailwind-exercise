@@ -18,7 +18,12 @@ module.exports = {
     fontFamily: {
       mono: ['Space Mono']
     },
-    extend: {},
+    extend: {
+      screens: {
+        'xs': '375px',
+        'xl': '1440px'
+      }
+    },
   },
   plugins: [],
 }
