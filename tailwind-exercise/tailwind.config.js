@@ -15,6 +15,9 @@ module.exports = {
         5: '#f4fafa'
       }
     },
+    fontFamily: {
+      mono: ['Space Mono']
+    },
     extend: {},
   },
   plugins: [],
