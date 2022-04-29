@@ -5,7 +5,14 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <h1 class="text-3xl text-primary font-mono">
+  <h1 class="
+    text-3xl 
+    font-mono
+    xs:text-primary 
+    sm:text-cyan-5
+    md:text-cyan-3
+    lg:text-cyan-2
+    xl:text-cyan-1">
     I'm space mono font!!
   </h1>
   <h2 class=" text-cyan-1 text-2xl">
