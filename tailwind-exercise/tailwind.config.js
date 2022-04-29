@@ -1,9 +1,16 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'xs': '375px',
+      ...defaultTheme.screens,
+      'xl': '1440px'
+    },
     colors: {
       primary: '#26c0ab',
       white: '#ffffff',
@@ -17,8 +24,7 @@ module.exports = {
     },
     fontFamily: {
       mono: ['Space Mono']
-    },
-    extend: {},
+    }
   },
   plugins: [],
 }
