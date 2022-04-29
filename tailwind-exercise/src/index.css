@@ -3,3 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .col-gap-2 {
+    @apply -mt-2;
+    @apply -ml-2;
+    > * {
+      @apply pt-2;
+      @apply pl-2;
+    }
+  }
+}
+
