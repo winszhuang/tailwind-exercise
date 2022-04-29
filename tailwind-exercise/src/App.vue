@@ -1,37 +1,41 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import BillInput from './components/BillInput.vue';
+import SelectTip from './components/SelectTip.vue';
+import NumberOfPeople from './components/NumberOfPeople.vue';
+import ShowNum from './components/ShowNum.vue';
 </script>
 
 <template>
-  <h1 class="
-    text-3xl 
-    font-mono
-    xs:text-primary 
-    sm:text-cyan-5
-    md:text-cyan-3
-    lg:text-cyan-2
-    xl:text-cyan-1">
-    I'm space mono font!!
-  </h1>
-  <h2 class=" text-cyan-1 text-2xl">
-    我是cyan-1
-  </h2>
-  <h2 class=" text-cyan-2 text-xl">
-    我是cyan-2
-  </h2>
-  <h2 class=" text-cyan-3 text-xs">
-    我是cyan-3
-  </h2>
-</template>
+  <div class="bg-cyan-4 h-screen flex justify-center items-center font-mono">
+    <main>
+      <img src="./assets/logo.svg" alt="" class="m-auto">
 
-<style>
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+      <!-- 主要區塊 -->
+      <div class="mt-16 flex justify-center p-7 bg-white rounded-xl">
+        <!-- 左邊計算區 -->
+        <div class="mr-6 min-w-[300px]">
+          <BillInput class="mb-7"/>
+          <SelectTip class="mb-7"/>
+          <NumberOfPeople class=""/>
+        </div>
+        <!-- 右邊結帳區 -->
+        <div class=" bg-cyan-1 rounded-xl p-5 min-w-[300px] flex flex-col">
+          <ShowNum 
+            :number="4.27"
+            :title="'Tip Amount'"
+            :subtitle="'/ person'"
+            class="mb-7"
+          />
+          <ShowNum 
+            :number="32.79"
+            :title="'Total'"
+            :subtitle="'/ person'"
+          />
+          <button class="mt-auto w-full bg-primary text-cyan-1 rounded py-2">
+            RESET
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+</template>
