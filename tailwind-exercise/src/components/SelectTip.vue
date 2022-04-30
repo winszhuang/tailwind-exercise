@@ -52,7 +52,7 @@ const isSelect = (item: Tip) => item.id === currentTip.value?.id;
     <h3 class=" text-cyan-2 mb-1">
       Select Tip %
     </h3>
-    <div class="flex flex-row flex-wrap col-gap-2">
+    <div class="flex flex-row flex-wrap col-gap-2 col-gap-4">
       <template 
         v-for="item in tips" 
         :key="item.id"
@@ -60,7 +60,7 @@ const isSelect = (item: Tip) => item.id === currentTip.value?.id;
         <Tip 
           :data="item"
           :isSelect="isSelect(item)"
-          class="basis-1/3"
+          class="md:basis-1/3 basis-1/2"
           @click="currentTip = item"/>
       </template>
     </div>
